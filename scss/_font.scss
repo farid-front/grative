@@ -30,3 +30,8 @@
     font-size: $font-size !important;
     font-weight: $font-weigt !important;
 }
+
+@mixin robotoCustom ($font-weight) {
+    font-family: 'roboto', sans-serif !important;
+    font-weight: $font-weight;
+}
