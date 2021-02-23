@@ -10,6 +10,12 @@
     top: 30px;
 }
 
+.position-relative-1 {
+    top: 70px;
+    padding-top: 50px;
+}
+
+
 .nav-link {
     @include robotoregular(20px);
     color: white !important;
@@ -81,8 +87,8 @@
     opacity: 1;
 
     &:hover {
-        background-color: $primary;
-        opacity: 0.8;
+        background-color: #2655b3 !important;
+
         transition: all .3s ease-in-out;
     }
 }
@@ -156,7 +162,7 @@
 
 .team-kami {
     @include poppinsbold (800);
-    font-size: 48px !important;
+    font-size: 2em !important;
     color: black !important;
     margin-top: 60px;
 }
@@ -213,7 +219,6 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.781);
     color: #ffffff;
-    // font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,3 +255,76 @@
 .bg-kuning {
     background-color: $secondary;
 }
+
+// image gallery
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+
+}
+
+// .zoom-img,
+// .thumbnails {
+//     flex-direction: column;
+// }
+
+.thumbnails {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.zoom-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 5px;
+}
+
+.thumbnail .thumbnail-image,
+.selected .thumbnail-image {
+    margin-right: 20px;
+}
+
+.thumbnail:hover .thumbnail-image,
+.selected .thumbnail-image {
+    border: 2px solid $primary;
+
+}
+
+.thumbnail-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.img-judul-deskripsi {
+    @include poppinsCustom(800, 2em);
+    color: black !important;
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+
+//     .zoom-img,
+//     .thumbnails {
+//         flex-direction: column;
+//         order: 1;
+//     }
+
+//     .zoom-img {
+//         width: 50vmin;
+//         height: 100vmin;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-position: top;
+//         border-radius: 5px;
+//         order: 2;
+//         margin-left: 20px;
+//     }
+// }

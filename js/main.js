@@ -41,3 +41,16 @@ function goToPreviousCard() {
         goToCard($previousCard);
     }
 }
+
+
+// layanan
+
+$('.thumbnail').on('click', function() {
+    const clicked = $(this);
+    const newSelection = clicked.data('big');
+    const $img = $('.zoom-img').css("background-image","url(" + newSelection + ")");
+    clicked.parent().find('.thumbnail').removeClass('selected');
+    clicked.addClass('selected');
+    
+    
+  });
