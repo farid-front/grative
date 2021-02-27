@@ -272,13 +272,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .zoom-img {
-    background-size: cover;
+    background-size: contain;
+    height: 20rem;
     background-repeat: no-repeat;
-    background-position: top;
+    background-origin: content-box;
     border-radius: 5px;
 }
 
